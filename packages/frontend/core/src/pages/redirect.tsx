@@ -11,6 +11,7 @@ const trustedDomain = [
   't.me',
   'reddit.com',
   'affine.pro',
+  'aff.kdcloud.myddns.me',
 ];
 
 const logger = new DebugLogger('redirect_proxy');
