@@ -24,10 +24,10 @@ export const mode = process.env.NODE_ENV;
 export const isDev = mode === 'development';
 
 const API_URL_MAPPING = {
-  stable: `https://app.affine.pro`,
-  beta: `https://insider.affine.pro`,
-  canary: `https://affine.fail`,
-  internal: `https://insider.affine.pro`,
+  stable: `https://aff.kdcloud.myddns.me`,
+  beta: `https://aff.kdcloud.myddns.me`,
+  canary: `https://aff.kdcloud.myddns.me`,
+  internal: `https://aff.kdcloud.myddns.me`,
 };
 
 export const CLOUD_BASE_URL =
