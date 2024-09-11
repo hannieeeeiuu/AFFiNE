@@ -9,7 +9,7 @@ export function getRuntimeConfig(buildFlags: BuildFlags): RuntimeConfig {
       return {
         distribution: buildFlags.distribution,
         appBuildType: 'stable' as const,
-        serverUrlPrefix: 'https://app.affine.pro',
+        serverUrlPrefix: 'https://aff.kdcloud.myddns.me',
         appVersion: packageJson.version,
         editorVersion: packageJson.devDependencies['@blocksuite/presets'],
         githubUrl: 'https://github.com/toeverything/AFFiNE',
@@ -34,7 +34,7 @@ export function getRuntimeConfig(buildFlags: BuildFlags): RuntimeConfig {
       return {
         ...this.stable,
         appBuildType: 'beta' as const,
-        serverUrlPrefix: 'https://insider.affine.pro',
+        serverUrlPrefix: 'https://aff.kdcloud.myddns.me',
         changelogUrl: 'https://github.com/toeverything/AFFiNE/releases',
       };
     },
@@ -42,7 +42,7 @@ export function getRuntimeConfig(buildFlags: BuildFlags): RuntimeConfig {
       return {
         ...this.stable,
         appBuildType: 'internal' as const,
-        serverUrlPrefix: 'https://insider.affine.pro',
+        serverUrlPrefix: 'https://aff.kdcloud.myddns.me',
         changelogUrl: 'https://github.com/toeverything/AFFiNE/releases',
       };
     },
@@ -51,7 +51,7 @@ export function getRuntimeConfig(buildFlags: BuildFlags): RuntimeConfig {
       return {
         ...this.stable,
         appBuildType: 'canary' as const,
-        serverUrlPrefix: 'https://affine.fail',
+        serverUrlPrefix: 'https://aff.kdcloud.myddns.me',
         changelogUrl: 'https://github.com/toeverything/AFFiNE/releases',
         enableInfoModal: true,
         enableOrganize: true,
